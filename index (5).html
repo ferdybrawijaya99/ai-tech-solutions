@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI TECH - Ferdy Brawijaya</title>
+  <style>
+    body {
+      margin:0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0a0a0a;
+      color:#fff;
+    }
+    header {
+      background-color:#000;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    header .logo {
+      font-weight:bold;
+      font-size:1.5rem;
+      color:#ff007f;
+    }
+    nav a {
+      margin:0 15px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:bold;
+    }
+    nav a:hover {color:#ff007f;}
+    .hero {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:center;
+      padding:50px;
+      background: radial-gradient(circle at top left, #151515, #000);
+    }
+    .hero-text {
+      flex:1;
+      min-width:300px;
+    }
+    .hero-text h1 {
+      font-size:3rem;
+      line-height:1.2;
+    }
+    .hero-text h1 span {
+      color:#ff007f;
+    }
+    .hero-text p {
+      margin-top:15px;
+      font-size:1.1rem;
+      color:#ddd;
+      max-width:500px;
+    }
+    .hero-buttons {
+      margin-top:20px;
+    }
+    .hero-buttons a {
+      display:inline-block;
+      padding:10px 20px;
+      margin-right:10px;
+      border-radius:25px;
+      background:linear-gradient(45deg,#ff007f,#ff5f5f);
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .hero-img {
+      flex:1;
+      min-width:250px;
+      display:flex;
+      justify-content:center;
+    }
+    .hero-img img {
+      width:250px;
+      height:250px;
+      border-radius:50%;
+      border:6px solid #ff007f;
+      object-fit:cover;
+    }
+    section {
+      padding:50px;
+    }
+    .features {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+    .feature-box {
+      background:#111;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+    }
+    .feature-box h3 {
+      color:#ff007f;
+    }
+    .about {
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .about-text {
+      flex:1;
+      min-width:300px;
+      padding:20px;
+    }
+    .about-img {
+      flex:1;
+      min-width:300px;
+      text-align:center;
+    }
+    .about-img img {
+      width:90%;
+      border-radius:10px;
+    }
+    .tech-badges span {
+      display:inline-block;
+      background:#222;
+      color:#ff007f;
+      padding:5px 10px;
+      margin:5px;
+      border-radius:5px;
+      font-size:0.9rem;
+    }
+    .contact {
+      display:flex;
+      flex-wrap:wrap;
+      gap:30px;
+    }
+    .contact-info, .contact-form {
+      flex:1;
+      min-width:300px;
+      background:#111;
+      padding:20px;
+      border-radius:10px;
+    }
+    .contact-info h3 {
+      color:#ff007f;
+    }
+    .contact-form input, .contact-form textarea {
+      width:100%;
+      padding:10px;
+      margin-bottom:10px;
+      background:#000;
+      border:none;
+      color:#fff;
+      border-radius:5px;
+    }
+    .contact-form button {
+      background:linear-gradient(45deg,#ff007f,#ff5f5f);
+      border:none;
+      padding:10px 20px;
+      border-radius:25px;
+      color:#fff;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    footer {
+      text-align:center;
+      padding:20px;
+      background:#000;
+      color:#888;
+    }
+    footer span {
+      color:#ff007f;
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AI TECH</div>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#features">Fitur</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>KODE <span>MASA DEPAN</span><br> DENGAN AI</h1>
+      <p>PENGEMBANG TEKNOLOGI AI & DESAINER APLIKASI<br>
+      Saya menciptakan pengalaman digital yang immersive dengan memadukan teknologi AI terdepan dan visual yang memukau.</p>
+      <div class="hero-buttons">
+        <a href="#features">Lihat Proyek</a>
+        <a href="#contact">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="foto.jpg" alt="Foto Ferdy">
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Fitur</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Drag & Drop Interface</h3>
+        <p>Antarmuka visual intuitif untuk membangun aplikasi AI tanpa coding.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Real-time Processing</h3>
+        <p>Pemrosesan data dan AI secara real-time dengan performa tinggi.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Enterprise Security</h3>
+        <p>Keamanan tingkat enterprise untuk melindungi data dan aplikasi.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Cloud Integration</h3>
+        <p>Integrasi mudah dengan berbagai layanan cloud populer.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Mobile Ready</h3>
+        <p>Aplikasi yang dibangun otomatis compatible dengan mobile devices.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Advanced Analytics</h3>
+        <p>Analytics mendalam untuk monitoring performa aplikasi AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>Tentang <span style="color:#ff007f;">Kami</span></h2>
+      <p>Dengan pengalaman lebih dari 3 tahun dalam industri teknologi AI, saya fokus pada pengembangan solusi yang dapat diakses oleh semua orang, tanpa memandang latar belakang teknis.<br><br>
+      Platform no-code yang saya kembangkan telah membantu ratusan klien menciptakan aplikasi AI yang powerful tanpa perlu menguasai bahasa pemrograman yang kompleks.</p>
+      <p><strong>500+</strong> Proyek Selesai &nbsp; <strong>50+</strong> Klien Puas &nbsp; <strong>3+</strong> Tahun Pengalaman &nbsp; <strong>24/7</strong> Support</p>
+      <div class="tech-badges">
+        <span>TensorFlow</span><span>PyTorch</span><span>OpenAI GPT</span><span>LangChain</span>
+        <span>React</span><span>Node.js</span><span>Python</span><span>Docker</span>
+        <span>AWS</span><span>Azure</span><span>Google Cloud</span><span>Kubernetes</span>
+      </div>
+    </div>
+    <div class="about-img">
+      <img src="office.jpg" alt="Office">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak</h2>
+    <div class="contact">
+      <div class="contact-info">
+        <h3>Informasi Kontak</h3>
+        <p>Email: ferdy.brawijaya@gmail.com</p>
+        <p>Telepon: +62 858-8444-2292</p>
+        <p>Lokasi: Sidoarjo, Indonesia</p>
+        <p>Ikuti Saya:
+          <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </p>
+      </div>
+      <div class="contact-form">
+        <h3>Kirim Pesan</h3>
+        <form>
+          <input type="text" placeholder="Nama Lengkap">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Subjek">
+          <textarea rows="4" placeholder="Pesan"></textarea>
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Created By: <span>FERDY BRAWIJAYA</span> © 2024 AI Tech Solutions. All rights reserved.
+  </footer>
+</body>
+</html>
