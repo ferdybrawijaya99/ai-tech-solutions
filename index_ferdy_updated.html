@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tech Solutions - Ferdy Brawijaya</title>
+  <meta name="description" content="Pengembangan teknologi AI dan aplikasi berbasis AI. Solusi no-code untuk bisnis modern.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'orbitron': ['Orbitron', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-pink-500/20">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold">
+        <span class="text-white font-orbitron">AI</span><span class="text-pink-500 font-orbitron">TECH</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="hover:text-pink-400">Beranda</a>
+        <a href="#solutions" class="hover:text-pink-400">Solusi</a>
+        <a href="#about" class="hover:text-pink-400">Tentang</a>
+        <a href="#contact" class="hover:text-pink-400">Kontak</a>
+      </div>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-2 rounded-full font-medium hover:from-pink-600 hover:to-red-600">Mulai Sekarang</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center bg-black relative overflow-hidden" style="background-image:url('https://readdy.ai/api/search-image?query=futuristic%20digital%20workspace&width=1920&height=1080');background-size:cover;background-position:center;">
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+    <div class="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight font-orbitron">
+          <span class="text-white">KODE MASA DEPAN</span><br><span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-red-500">DENGAN AI</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl text-gray-300">PENGEMBANG TEKNOLOGI AI & DESAINER APLIKASI</h2>
+        <p class="text-gray-400">Saya menciptakan pengalaman digital yang immersive dengan memadukan teknologi AI terdepan dan visual yang memukau.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#about" class="bg-gradient-to-r from-pink-500 to-red-500 text-white px-8 py-4 rounded-full hover:from-pink-600 hover:to-red-600 flex items-center justify-center gap-2">
+            <i class="ri-eye-line"></i>Lihat Proyek
+          </a>
+          <a href="#contact" class="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-full hover:bg-pink-500 hover:text-white flex items-center justify-center gap-2">
+            <i class="ri-message-3-line"></i>Hubungi Saya
+          </a>
+        </div>
+      </div>
+      <div class="relative hidden lg:block">
+        <div class="relative w-80 h-80 rounded-full overflow-hidden border-4 border-pink-500 animate-float mx-auto">
+          <img src="ferdy.webp" alt="Ferdy Brawijaya" class="w-full h-full object-cover object-top">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-950">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-4 font-orbitron">Tentang Saya</h2>
+        <p class="text-gray-400 mb-6">Saya Ferdy Brawijaya, pengembang teknologi AI dan desainer aplikasi dengan passion untuk mengubah ide kompleks menjadi solusi digital yang mudah digunakan.</p>
+        <ul class="text-gray-400 space-y-2">
+          <li><i class="ri-mail-line text-pink-500"></i> ferdy.brawijaya99@gmail.com</li>
+          <li><i class="ri-phone-line text-pink-500"></i> +6285884442292</li>
+          <li><i class="ri-map-pin-line text-pink-500"></i> Sidoarjo – Indonesia</li>
+        </ul>
+      </div>
+      <div class="rounded-xl overflow-hidden border-2 border-pink-500 animate-float">
+        <img src="ferdy.webp" alt="Foto Profil" class="w-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-black">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6 font-orbitron">Kontak Saya</h2>
+      <p class="text-gray-400 mb-6">Silakan hubungi saya untuk kerja sama atau pertanyaan lebih lanjut.</p>
+      <a href="mailto:ferdy.brawijaya99@gmail.com" class="bg-gradient-to-r from-pink-500 to-red-500 text-white px-8 py-4 rounded-full hover:from-pink-600 hover:to-red-600 inline-flex items-center gap-2">
+        <i class="ri-mail-line"></i>Kirim Email
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-gray-500 bg-gray-950">
+    Created By FERDY BRAWIJAYA
+  </footer>
+</body>
+</html>
